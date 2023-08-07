@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 number = 3.14159
-prec = 2
-result = f"{number:.{prec}f}"
-print(f"Float: result")
+print(f"Float: {number:.2f}")
