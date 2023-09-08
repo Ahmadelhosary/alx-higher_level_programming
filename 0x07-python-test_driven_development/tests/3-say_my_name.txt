@@ -1,5 +1,5 @@
 ===========================
-How to Use 0-add_integer.py
+How to Use 3-say_my_name.py
 ===========================
 
 This module defines an integer addition function ``add_integer(a, b=98)``.
@@ -7,12 +7,22 @@ This module defines an integer addition function ``add_integer(a, b=98)``.
 Usage
 =====
 
-``add_integer(...)``` returns the addition of its two arguments. For numbers,
-that value is equivalent to using the ``+`` operator.
+a function that prints My name is <first name> <last name>
 
 ::
 
-    >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(2, 3)
-    5
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("ahmed ", "mahmoud")
+    ahmed mahmoud
 
+::
+
+>>> say_my_name(1, "hello")
+    Traceback (most recent call last):
+    TypeError: first name must be a string
+
+::
+
+>>> say_my_name("hello", 3)
+    Traceback (most recent call last):
+    TypeError: second name must be a string
